@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MainCollectionViewCell" customModule="MoyaStudy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LhN-iM-ol1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="375"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_mask.png" translatesAutoresizingMaskIntoConstraints="NO" id="qNe-Cn-sjs">
+                        <rect key="frame" x="0.0" y="250" width="375" height="125"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一对一私密视频哟一对一视频聊天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hON-O2-dEm">
+                        <rect key="frame" x="14" y="350.5" width="184" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小玉娘" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rZ-GH-QT9">
+                        <rect key="frame" x="14" y="323.5" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onlinestatus_live.png" translatesAutoresizingMaskIntoConstraints="NO" id="26e-p8-cFY">
+                        <rect key="frame" x="319" y="14" width="42" height="17"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qNe-Cn-sjs" secondAttribute="bottom" id="3E2-Ma-wU3"/>
+                <constraint firstAttribute="trailing" secondItem="26e-p8-cFY" secondAttribute="trailing" constant="14" id="Anl-yk-Kfd"/>
+                <constraint firstItem="hON-O2-dEm" firstAttribute="top" secondItem="7rZ-GH-QT9" secondAttribute="bottom" constant="9" id="C4K-jj-WUo"/>
+                <constraint firstItem="26e-p8-cFY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="14" id="E35-Ge-fUJ"/>
+                <constraint firstItem="qNe-Cn-sjs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="KD0-4R-0cj"/>
+                <constraint firstAttribute="trailing" secondItem="LhN-iM-ol1" secondAttribute="trailing" id="dbi-Jc-a7a"/>
+                <constraint firstAttribute="bottom" secondItem="hON-O2-dEm" secondAttribute="bottom" constant="10" id="eng-p1-hTS"/>
+                <constraint firstItem="hON-O2-dEm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="14" id="fP1-y4-Bul"/>
+                <constraint firstAttribute="bottom" secondItem="LhN-iM-ol1" secondAttribute="bottom" id="go2-GL-8Z6"/>
+                <constraint firstItem="LhN-iM-ol1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h4U-zR-CQD"/>
+                <constraint firstAttribute="trailing" secondItem="qNe-Cn-sjs" secondAttribute="trailing" id="i8y-z8-o7R"/>
+                <constraint firstItem="LhN-iM-ol1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="urn-3o-Xy0"/>
+                <constraint firstItem="7rZ-GH-QT9" firstAttribute="leading" secondItem="hON-O2-dEm" secondAttribute="leading" id="yRm-db-xmx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="nameLabel" destination="7rZ-GH-QT9" id="CuZ-x5-tFR"/>
+                <outlet property="photoImageView" destination="LhN-iM-ol1" id="nwb-Wc-yIZ"/>
+                <outlet property="tipLabel" destination="hON-O2-dEm" id="SDq-WJ-Uly"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="home_mask.png" width="375" height="125"/>
+        <image name="onlinestatus_live.png" width="42" height="17"/>
+    </resources>
+</document>
